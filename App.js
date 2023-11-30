@@ -1,14 +1,14 @@
-import { StyleSheet, ScrollView, ImageBackground ,StatusBar} from 'react-native';
+import { StyleSheet, ScrollView, ImageBackground ,StatusBar,View} from 'react-native';
 import Weather from './src';
 
 export default function App() {
   return (
+    <ImageBackground source={require('./assets/bg1.jpg')} style={styles.image}>
     <ScrollView style={styles.container}>
       <StatusBar style={styles.StatusBar}/>
-      <ImageBackground source={require('./assets/bg1.jpg')} style={styles.image}>
         <Weather />
-      </ImageBackground>
     </ScrollView>
+    </ImageBackground>
   );
 }
 
