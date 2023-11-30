@@ -1,6 +1,5 @@
 import { View, Text, StyleSheet, Alert, ActivityIndicator } from 'react-native';
 import React, { useState, useEffect } from 'react';
-import Constants from 'expo-constants';
 import WeatherInfo from './WeatherInformation';
 
 const API_KEYS = 'eac25520529beec802ef72732dab5d31';

@@ -1,4 +1,4 @@
-import {View, Text, TextInput, StyleSheet, Dimensions} from 'react-native'
+import {View, TextInput, StyleSheet, Dimensions} from 'react-native'
 import React, {useState} from 'react'
 import {EvilIcons} from '@expo/vector-icons';
 

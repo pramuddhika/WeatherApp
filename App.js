@@ -1,4 +1,4 @@
-import { StyleSheet, ScrollView, ImageBackground ,StatusBar,View} from 'react-native';
+import { StyleSheet, ScrollView, ImageBackground ,StatusBar} from 'react-native';
 import Weather from './src';
 
 export default function App() {
