@@ -7,7 +7,8 @@ const API_KEYS = 'eac25520529beec802ef72732dab5d31';
 const Weather = () => {
     const [weatherData, setWeatherData] = useState(null);
     const [loaded, setLoaded] = useState(false);
-    const [refresh, setRefresh] = useState(false); // New state for refreshing
+    // New state for refreshing
+    const [refresh, setRefresh] = useState(false); 
 
     // add a function to fetch the weather data
     const fetchWeatherData = async (cityName) => {
@@ -20,7 +21,8 @@ const Weather = () => {
             } else {
                 setWeatherData(null);
                 Alert.alert('City not found', 'Please enter a valid city name.', [
-                    { text: 'OK', onPress: () => setRefresh(true) }, // Trigger refresh on OK press
+                    // Trigger refresh on OK press
+                    { text: 'OK', onPress: () => setRefresh(true) }, 
                 ]);
             }
             setLoaded(true);
@@ -32,7 +34,8 @@ const Weather = () => {
     // Remember my city name
     useEffect(() => {
         fetchWeatherData("Rathnapura");
-    }, [refresh]); // Listen for changes in the refresh state
+        // Listen for changes in the refresh state
+    }, [refresh]); 
 
     // If the data is not loaded, show a loading message
     if (!loaded) {
