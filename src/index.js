@@ -31,7 +31,7 @@ const Weather = () => {
         }
     };
 
-    // Remember my city name
+    // default city name
     useEffect(() => {
         fetchWeatherData("Rathnapura");
         // Listen for changes in the refresh state
