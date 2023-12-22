@@ -21,7 +21,7 @@ const Weather = () => {
             } else {
                 setWeatherData(null);
                 Alert.alert('City not found', 'Please enter a valid city name.', [
-                    // Trigger refresh on OK press
+                    // refresh when OK press
                     { text: 'OK', onPress: () => setRefresh(true) }, 
                 ]);
             }
