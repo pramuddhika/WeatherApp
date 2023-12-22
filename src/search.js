@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
         borderRadius: 25,
         marginHorizontal: 75,
         paddingHorizontal: 25,
-        backgroundColor: 'lightgray',
+        backgroundColor: 'white',
     }
 })
