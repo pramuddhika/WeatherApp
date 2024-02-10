@@ -2,7 +2,8 @@ import { View, Text, StyleSheet, Alert, ActivityIndicator } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import WeatherInfo from './WeatherInformation';
 
-const API_KEYS = 'eac25520529beec802ef72732dab5d31';
+const API_KEYS = '#################';
+//add your API key to this place
 
 const Weather = () => {
     const [weatherData, setWeatherData] = useState(null);
